@@ -4,6 +4,11 @@ Created on Mon Feb 21 17:41:32 2022
 
 @author: hanju
 """
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+
 # 2019
 dogs = pd.read_csv('D:/multi_project_sample_data_/pet.csv', header = 1, sep = ',', encoding = 'utf-8')
 dogs
@@ -30,4 +35,12 @@ dogs_2020.reset_index(inplace = True, drop = True)
 
 dogs_2020
 dogs_2020.to_excel('D:/multi_project_sample_data_/2020_pet.xlsx', index = False)
+
+plt.title('2019 dogs rate')
+plt.xlabel('own')
+plt.ylabel('percentages')
+plt.rc('font', family = "Malgun Gothic")
+plt.rcParams['axes.unicode_minus'] = False
+dogs_2019.boxplot(column=['있다'], notch=True)
+
 
