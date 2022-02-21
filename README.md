@@ -11,3 +11,8 @@
 
 화이팅!
 
+---
+
+- All data will be named in English 
+
+  
