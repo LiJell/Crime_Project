@@ -59,4 +59,4 @@ df = pd.read_csv('./서울시 공원 통계2019.txt', header = 2, sep = '\t')
 df = df[['기간', '자치구', '공원수']]
 df.info()
 df['공원수'] = df.loc[:, '공원수'].str.replace(',', '').astype('int64')
-df.drop(-1, axis = 0)
+df.drop(26)
