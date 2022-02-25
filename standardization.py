@@ -23,4 +23,4 @@ jachigu = data_all['자치구']
 all_standardized['자치구'] = jachigu
 all_standardized.describe()
 all_standardized.to_excel('D:/multi_project_sample_data_/2019_crime_density_standardized.xlsx', index = False)
--
+
