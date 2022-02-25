@@ -45,7 +45,6 @@ plt.plot(y_hat, label = 'y_hat')
 plt.legend()
 plt.show()
 
-
 # ols
 import statsmodels.formula.api as sm
 
